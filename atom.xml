@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Data Science Journey]]></title>
+  <link href="https://qumino2.github.io/atom.xml" rel="self"/>
+  <link href="https://qumino2.github.io/"/>
+  <updated>2019-12-29T18:53:57+08:00</updated>
+  <id>https://qumino2.github.io/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[Weekly Goal / Review: 12/30 - 01/05 Dec 2019]]></title>
+    <link href="https://qumino2.github.io/15776168175101.html"/>
+    <updated>2019-12-29T18:53:37+08:00</updated>
+    <id>https://qumino2.github.io/15776168175101.html</id>
+    <content type="html"><![CDATA[
+
+]]></content>
+  </entry>
+  
+</feed>
