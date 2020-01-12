@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       
-    Review A Repo's History - Data Science Journey
+    Udacity Git & Github Course Notes - Data Science Journey
     
     </title>
     
@@ -83,7 +83,7 @@
                   <div class="post-body single-content">
                     
                     <h1 class="title">
-                            Review A Repo's History   
+                            Udacity Git & Github Course Notes   
                       </h1>
                      
                     
@@ -120,7 +120,34 @@
                     </div>
                 </div>
                   <article class="markdown-body single-content">
-                    <p><code>git log</code> - display all of the commits of a repository</p>
+                    <ul>
+<li>
+<a href="#toc_0">Review A Repo&#39;s History</a>
+</li>
+<li>
+<a href="#toc_1">Add Commits to A Repo</a>
+</li>
+<li>
+<a href="#toc_2">Tagging, Branching, and Merging</a>
+</li>
+<li>
+<a href="#toc_3">Undoing Changes</a>
+</li>
+<li>
+<a href="#toc_4">Remote Repositories</a>
+</li>
+<li>
+<a href="#toc_5">Working On Another Developer&#39;s Repository</a>
+</li>
+<li>
+<a href="#toc_6">Staying In Sync With A Remote Repository</a>
+</li>
+</ul>
+
+
+<h1 id="toc_0">Review A Repo&#39;s History</h1>
+
+<p><code>git log</code> - display all of the commits of a repository</p>
 
 <ul>
 <li>the SHA</li>
@@ -158,6 +185,334 @@
 <li>displays the actual changes that have been made</li>
 <li><code>git log -p SHA</code> OR <code>git show -SHA</code> to look into a  specific commit</li>
 </ul>
+
+<h1 id="toc_1">Add Commits to A Repo</h1>
+
+<p><code>git add &lt;file1&gt; &lt;file2&gt;...&lt;fileN&gt;</code></p>
+
+<ul>
+<li>move files from the Working Directory to the Staging Index</li>
+<li><code>git add .</code> refers to the all files and directories in current directory</li>
+</ul>
+
+<p><code>git rm --cached</code></p>
+
+<ul>
+<li>removes file from the Staging Index</li>
+</ul>
+
+<p><code>git commit -m &quot;Initial commit&quot;</code></p>
+
+<ul>
+<li>Bypass the editor with the <code>-m</code> flag</li>
+</ul>
+
+<p><strong>What to include in a Commit</strong></p>
+
+<ul>
+<li>The goal is that each commit has a single focus</li>
+</ul>
+
+<p><strong>What makes good commit messages?</strong></p>
+
+<p>Do</p>
+
+<ul>
+<li>do keep the message short (less than 60-ish characters)</li>
+<li>do explain what the commit does (not how or why!)</li>
+</ul>
+
+<p>Do not</p>
+
+<ul>
+<li>do not explain why the changes are made (more on this below)</li>
+<li>do not explain how the changes are made (that&#39;s what git log -p is for!)</li>
+<li>do not use the word &quot;and&quot;</li>
+</ul>
+
+<p><strong>What if you want to explain the Why</strong></p>
+
+<p><img src="media/15784050233940/15786665574734.jpg" alt="" style="width:533px;"/><br/>
+The information in red box is included in the <code>git log</code>.</p>
+
+<p><a href="https://udacity.github.io/git-styleguide/">Udacity Git Commit Message Style Guide</a></p>
+
+<p><code>git diff</code></p>
+
+<ul>
+<li>to see changes that have been made but haven&#39;t been committed, yet.
+<ul>
+<li>the files that have been modified</li>
+<li>the location of the lines that have been added/removed</li>
+<li>the actual changes that have been made</li>
+</ul></li>
+<li>same as <code>git log -p</code></li>
+</ul>
+
+<p><strong>Having Git Ignore Files</strong></p>
+
+<ul>
+<li>add <code>.gitignore</code> file to the same directory that the hidden <code>.git</code> directory is located</li>
+</ul>
+
+<p><strong>What if there are a lot files to ignore?</strong><br/>
+<img src="media/15784050233940/15786674619251.jpg" alt="" style="width:590px;"/></p>
+
+<h1 id="toc_2">Tagging, Branching, and Merging</h1>
+
+<p><strong>Tagging</strong></p>
+
+<ul>
+<li><code>git tag -a v1.0 (SHA)</code>
+<ul>
+<li>without providing SHA, git will tag the most recent commit</li>
+<li><code>-a</code>flag (always use this flag) tells Git to create an annotated flag which include a lot of extra information such as:
+<ul>
+<li>the person who made the tag</li>
+<li>the date the tag was made</li>
+<li>a message for the tag</li>
+</ul></li>
+</ul></li>
+<li>to delete a tag <code>git tag -d v1.0</code></li>
+</ul>
+
+<p><strong>Branching</strong></p>
+
+<ul>
+<li><p><code>git branch (name) (SHA)</code></p>
+<ul>
+<li>list all branch names in the repository</li>
+<li>create new branches</li>
+<li>delete branches (<code>git branch -d (name)</code>)
+<ul>
+<li>can&#39;t delete a branch that you&#39;re currently on.</li>
+<li>can&#39;t delete a branch that has unique commit</li>
+<li>To force deletion, <code>git branch -D sidebar</code></li>
+</ul></li>
+</ul></li>
+<li><p><code>git checkout (name)</code></p>
+<ul>
+<li>will remove all of the files that are referenced by commits in the master branch.</li>
+<li>will replace them with the files that are referenced by the commits in the sidebar branch. </li>
+<li>HEAD indicator pointing to the branch</li>
+</ul></li>
+<li><p><code>git checkout -b footer master</code></p>
+<ul>
+<li>create a branch and switch to it in one command<br/></li>
+</ul></li>
+<li><p>See all branches at once</p>
+<ul>
+<li><code>git log --oneline --graph --all</code></li>
+</ul></li>
+</ul>
+
+<p><strong>Merging</strong></p>
+
+<ul>
+<li>regular merge &amp; fast-forward merge</li>
+<li>making a merge makes a commit</li>
+<li><code>git merge &lt;other-branch&gt;</code>merge into the current &#39;checkout&#39; branch</li>
+</ul>
+
+<p><strong>Merge Conflicts</strong></p>
+
+<ul>
+<li>a merge conflict occurs when Git isn&#39;t sure which line(s) you want to use from the branches that are being merged.</li>
+<li>so we need to edit the same line on two different branches and then try to merge them.</li>
+<li>Steps to solve merge conflicts
+<ul>
+<li>locate and remove all lines with merge conflict indicators</li>
+<li>determine what to keep</li>
+<li>save the file(s)</li>
+<li>stage the file(s)</li>
+<li>make a commit</li>
+</ul></li>
+</ul>
+
+<h1 id="toc_3">Undoing Changes</h1>
+
+<p><strong>Changing The Last Commit</strong></p>
+
+<p><code>git commit --amend</code></p>
+
+<ul>
+<li>If your Working Directory is clean, it will let you provide a new commit message.</li>
+<li>Add Forgotten Files (or changes to files) To Commit
+<ul>
+<li>edit the file(s)</li>
+<li>save the file(s)</li>
+<li>stage the file(s)</li>
+<li>and run <code>git commit --amend</code></li>
+</ul></li>
+</ul>
+
+<p><strong>Reverting A Commit</strong></p>
+
+<p><code>git revert</code></p>
+
+<ul>
+<li><code>git revert &lt;SHA-of-commit-to-revert&gt;</code></li>
+<li>will undo the changes that were made by the provided commit</li>
+<li>creates a new commit to record the change</li>
+</ul>
+
+<p><strong>Relative Commit References</strong></p>
+
+<p><img src="media/15788002911876/15788042909478.jpg" alt="" style="width:584px;"/></p>
+
+<p><strong>Resetting Commits</strong></p>
+
+<p><code>git reset &lt;reference-to-commit&gt;</code></p>
+
+<ul>
+<li>move the HEAD and current branch pointer to the referenced commit</li>
+<li>erase commits
+<ul>
+<li>flag --hard</li>
+</ul></li>
+<li>move committed changes to the staging index
+<ul>
+<li>flag --soft</li>
+</ul></li>
+<li>unstage committed changes
+<ul>
+<li>flag --mixed (default without flag)</li>
+</ul></li>
+<li>before doing any resetting, create <code>backup</code> branch on the most-recent commit <code>git branch backup</code></li>
+</ul>
+
+<p><img src="media/15788002911876/15788046264834.jpg" alt="" style="width:574px;"/></p>
+
+<p>Back To Normal</p>
+
+<ol>
+<li>remove the uncommitted changes from the working directory
+<ul>
+<li>git checkout -- index.html</li>
+</ul></li>
+<li>merge <code>backup</code> into <code>master</code> (which will cause a Fast-forward merge and move <code>master</code> up to the same point as <code>backup</code>)
+<ul>
+<li>git merge backup</li>
+</ul></li>
+</ol>
+
+<h1 id="toc_4">Remote Repositories</h1>
+
+<p><strong>Add A Remote Repository</strong></p>
+
+<ul>
+<li><code>git remote add origin &lt;url&gt;</code> to set the shortname</li>
+<li><code>git remote -v</code> to see the full path to the remote repository</li>
+</ul>
+
+<p><strong>Push Changes To A Remote</strong></p>
+
+<ul>
+<li><code>git push &lt;remote-shortname&gt; &lt;branch&gt;</code></li>
+</ul>
+
+<p><strong>Pulling Changes From A Remote</strong></p>
+
+<ul>
+<li><code>git pull &lt;remote-shortname&gt; &lt;branch&gt;</code></li>
+</ul>
+
+<p><strong>Pull vs Fetch</strong></p>
+
+<ul>
+<li><code>git pull</code> do two things:
+<ul>
+<li>fetching remote changes (which adds the commits to the local repository and moves the tracking branch to point to them)</li>
+<li>merging the local branch with the tracking branch</li>
+</ul></li>
+<li>below is when we cannot use <code>git pull origin master</code></li>
+</ul>
+
+<p><img src="media/15788058429881/15788123592958.jpg" alt="" style="width:564px;"/></p>
+
+<h1 id="toc_5">Working On Another Developer&#39;s Repository</h1>
+
+<p><strong>Reviewing Existing Work</strong></p>
+
+<p>Filter Commits By Author</p>
+
+<ul>
+<li><p><code>git shortlog -s -n</code></p>
+<ul>
+<li><code>-s</code> to show just the number of commits</li>
+<li><code>-n</code> to sort them numerically</li>
+</ul></li>
+<li><p><code>git log</code> --author=surma</p></li>
+</ul>
+
+<p>Filter Commits By Search</p>
+
+<p><code>--grep</code>flag</p>
+
+<ul>
+<li><code>git log --grep=bug</code></li>
+<li><code>git log --grep=&quot;unit tests&quot;</code></li>
+<li>Grep is a pattern matching tool</li>
+</ul>
+
+<p><strong>Determining What To Work On</strong></p>
+
+<ul>
+<li>check<code>CONTRIBUTING.md</code>file</li>
+<li>GitHub Issues</li>
+</ul>
+
+<p><strong>Topic Branches</strong></p>
+
+<p><strong>Update The README</strong></p>
+
+<h1 id="toc_6">Staying In Sync With A Remote Repository</h1>
+
+<p><strong>Create a Pull Request</strong></p>
+
+<ul>
+<li>A pull request is a request to the original or source repository&#39;s maintainer to include changes in their project that you made in your fork of their project. You are requesting that they pull in changes you&#39;ve made.</li>
+</ul>
+
+<p>Recap</p>
+
+<p>A pull request is a request for the source repository to pull in your commits and merge them with their project. To create a pull request, a couple of things need to happen:</p>
+
+<ul>
+<li>you must fork the source repository</li>
+<li>clone your fork down to your machine</li>
+<li>make some commits (ideally on a topic branch!)</li>
+<li>push the commits back to your fork</li>
+<li>create a new pull request and choose the branch that has your new commits</li>
+</ul>
+
+<p><strong>Retrieving Upstream Changes</strong></p>
+
+<ul>
+<li><code>git fetch upstream master</code>
+<img src="media/15788176495064/15788275570715.jpg" alt="" style="width:583px;"/></li>
+</ul>
+
+<p><strong>Manage an active PR</strong><br/>
+If the project&#39;s maintainer is requesting changes to the pull request, then:</p>
+
+<ul>
+<li>make any necessary commits on the same branch in your local repository that your pull request is based on</li>
+<li>push the branch to the your fork of the source repository</li>
+</ul>
+
+<p>The commits will then show up on the pull request page.</p>
+
+<p><strong>Squash Commits</strong></p>
+
+<p>The Rebase Command<code>git rebase -i HEAD~3</code></p>
+
+<ul>
+<li><code>HEAD~3</code>as the base where all of the other commits (<code>HEAD~2</code>, <code>HEAD~1</code>, <code>HEAD</code>) will connect to. (<code>HEAD</code> point to current location) </li>
+<li><code>-i</code> in the command stands for &quot;interactive&quot;. </li>
+</ul>
+
+<p><img src="media/15788176495064/15788289497578.jpg" alt="" style="width:585px;"/></p>
 
                   </article>
                   <div class="comments-wrap">
