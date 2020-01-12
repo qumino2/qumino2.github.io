@@ -4,13 +4,510 @@
   <title><![CDATA[Data Science Journey]]></title>
   <link href="https://qumino2.github.io/atom.xml" rel="self"/>
   <link href="https://qumino2.github.io/"/>
-  <updated>2020-01-05T23:41:28+08:00</updated>
+  <updated>2020-01-05T23:42:59+08:00</updated>
   <id>https://qumino2.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[Weekly Goal / Review: 01/13 - 01/19 Jan 2020]]></title>
+    <link href="https://qumino2.github.io/15788407637640.html"/>
+    <updated>2020-01-12T22:52:43+08:00</updated>
+    <id>https://qumino2.github.io/15788407637640.html</id>
+    <content type="html"><![CDATA[
+<h1 id="toc_0">Highlights</h1>
+
+<h1 id="toc_1">Goals</h1>
+
+<p>Resubmit required documents for application</p>
+
+<p>At least two chapter progress of LPTHW</p>
+
+<h1 id="toc_2">Focus habit</h1>
+
+<p>1 hour+ translating Self-control Guide everyday (preferable before work)</p>
+
+<h1 id="toc_3">Media and Events</h1>
+
+<h3 id="toc_4">Events</h3>
+
+<h3 id="toc_5">Books</h3>
+
+<p>Sapiens: A Brief History of Humankind (Mint reading catch up)</p>
+
+<h3 id="toc_6">Movies</h3>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Staying In Sync With A Remote Repository]]></title>
+    <link href="https://qumino2.github.io/15788176495064.html"/>
+    <updated>2020-01-12T16:27:29+08:00</updated>
+    <id>https://qumino2.github.io/15788176495064.html</id>
+    <content type="html"><![CDATA[
+<p><strong>Create a Pull Request</strong></p>
+
+<ul>
+<li>A pull request is a request to the original or source repository&#39;s maintainer to include changes in their project that you made in your fork of their project. You are requesting that they pull in changes you&#39;ve made.</li>
+</ul>
+
+<p>Recap</p>
+
+<p>A pull request is a request for the source repository to pull in your commits and merge them with their project. To create a pull request, a couple of things need to happen:</p>
+
+<ul>
+<li>you must fork the source repository</li>
+<li>clone your fork down to your machine</li>
+<li>make some commits (ideally on a topic branch!)</li>
+<li>push the commits back to your fork</li>
+<li>create a new pull request and choose the branch that has your new commits</li>
+</ul>
+
+<p><strong>Retrieving Upstream Changes</strong></p>
+
+<ul>
+<li><code>git fetch upstream master</code>
+<img src="media/15788176495064/15788275570715.jpg" alt="" style="width:583px;"/></li>
+</ul>
+
+<p><strong>Manage an active PR</strong><br/>
+If the project&#39;s maintainer is requesting changes to the pull request, then:</p>
+
+<ul>
+<li>make any necessary commits on the same branch in your local repository that your pull request is based on</li>
+<li>push the branch to the your fork of the source repository</li>
+</ul>
+
+<p>The commits will then show up on the pull request page.</p>
+
+<p><strong>Squash Commits</strong></p>
+
+<p>The Rebase Command<code>git rebase -i HEAD~3</code></p>
+
+<ul>
+<li><code>HEAD~3</code>as the base where all of the other commits (<code>HEAD~2</code>, <code>HEAD~1</code>, <code>HEAD</code>) will connect to. (<code>HEAD</code> point to current location) </li>
+<li><code>-i</code> in the command stands for &quot;interactive&quot;. </li>
+</ul>
+
+<p><img src="media/15788176495064/15788289497578.jpg" alt="" style="width:585px;"/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Working On Another Developer's Repository]]></title>
+    <link href="https://qumino2.github.io/15788128031129.html"/>
+    <updated>2020-01-12T15:06:43+08:00</updated>
+    <id>https://qumino2.github.io/15788128031129.html</id>
+    <content type="html"><![CDATA[
+<p><strong>Reviewing Existing Work</strong></p>
+
+<p>Filter Commits By Author</p>
+
+<ul>
+<li><p><code>git shortlog -s -n</code></p>
+<ul>
+<li><code>-s</code> to show just the number of commits</li>
+<li><code>-n</code> to sort them numerically</li>
+</ul></li>
+<li><p><code>git log</code> --author=surma</p></li>
+</ul>
+
+<p>Filter Commits By Search</p>
+
+<p><code>--grep</code>flag</p>
+
+<ul>
+<li><code>git log --grep=bug</code></li>
+<li><code>git log --grep=&quot;unit tests&quot;</code></li>
+<li>Grep is a pattern matching tool</li>
+</ul>
+
+<p><strong>Determining What To Work On</strong></p>
+
+<ul>
+<li>check<code>CONTRIBUTING.md</code>file</li>
+<li>GitHub Issues</li>
+</ul>
+
+<p><strong>Topic Branches</strong></p>
+
+<p><strong>Update The README</strong></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Remote Repositories]]></title>
+    <link href="https://qumino2.github.io/15788058429881.html"/>
+    <updated>2020-01-12T13:10:42+08:00</updated>
+    <id>https://qumino2.github.io/15788058429881.html</id>
+    <content type="html"><![CDATA[
+<p><strong>Add A Remote Repository</strong></p>
+
+<ul>
+<li><code>git remote add origin &lt;url&gt;</code> to set the shortname</li>
+<li><code>git remote -v</code> to see the full path to the remote repository</li>
+</ul>
+
+<p><strong>Push Changes To A Remote</strong></p>
+
+<ul>
+<li><code>git push &lt;remote-shortname&gt; &lt;branch&gt;</code></li>
+</ul>
+
+<p><strong>Pulling Changes From A Remote</strong></p>
+
+<ul>
+<li><code>git pull &lt;remote-shortname&gt; &lt;branch&gt;</code></li>
+</ul>
+
+<p><strong>Pull vs Fetch</strong></p>
+
+<ul>
+<li><code>git pull</code> do two things:
+<ul>
+<li>fetching remote changes (which adds the commits to the local repository and moves the tracking branch to point to them)</li>
+<li>merging the local branch with the tracking branch</li>
+</ul></li>
+<li>below is when we cannot use <code>git pull origin master</code></li>
+</ul>
+
+<p><img src="media/15788058429881/15788123592958.jpg" alt="" style="width:564px;"/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Undoing Changes]]></title>
+    <link href="https://qumino2.github.io/15788002911876.html"/>
+    <updated>2020-01-12T11:38:11+08:00</updated>
+    <id>https://qumino2.github.io/15788002911876.html</id>
+    <content type="html"><![CDATA[
+<p><strong>Changing The Last Commit</strong></p>
+
+<p><code>git commit --amend</code></p>
+
+<ul>
+<li>If your Working Directory is clean, it will let you provide a new commit message.</li>
+<li>Add Forgotten Files (or changes to files) To Commit
+<ul>
+<li>edit the file(s)</li>
+<li>save the file(s)</li>
+<li>stage the file(s)</li>
+<li>and run <code>git commit --amend</code></li>
+</ul></li>
+</ul>
+
+<p><strong>Reverting A Commit</strong></p>
+
+<p><code>git revert</code></p>
+
+<ul>
+<li><code>git revert &lt;SHA-of-commit-to-revert&gt;</code></li>
+<li>will undo the changes that were made by the provided commit</li>
+<li>creates a new commit to record the change</li>
+</ul>
+
+<p><strong>Relative Commit References</strong></p>
+
+<p><img src="media/15788002911876/15788042909478.jpg" alt="" style="width:584px;"/></p>
+
+<p><strong>Resetting Commits</strong></p>
+
+<p><code>git reset &lt;reference-to-commit&gt;</code></p>
+
+<ul>
+<li>move the HEAD and current branch pointer to the referenced commit</li>
+<li>erase commits
+<ul>
+<li>flag --hard</li>
+</ul></li>
+<li>move committed changes to the staging index
+<ul>
+<li>flag --soft</li>
+</ul></li>
+<li>unstage committed changes
+<ul>
+<li>flag --mixed (default without flag)</li>
+</ul></li>
+<li>before doing any resetting, create <code>backup</code> branch on the most-recent commit <code>git branch backup</code></li>
+</ul>
+
+<p><img src="media/15788002911876/15788046264834.jpg" alt="" style="width:574px;"/></p>
+
+<p>Back To Normal</p>
+
+<ol>
+<li>remove the uncommitted changes from the working directory
+<ul>
+<li>git checkout -- index.html</li>
+</ul></li>
+<li>merge <code>backup</code> into <code>master</code> (which will cause a Fast-forward merge and move <code>master</code> up to the same point as <code>backup</code>)
+<ul>
+<li>git merge backup</li>
+</ul></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tagging, Branching, and Merging]]></title>
+    <link href="https://qumino2.github.io/15786676428264.html"/>
+    <updated>2020-01-10T22:47:22+08:00</updated>
+    <id>https://qumino2.github.io/15786676428264.html</id>
+    <content type="html"><![CDATA[
+<p><strong>Tagging</strong></p>
+
+<ul>
+<li><code>git tag -a v1.0 (SHA)</code>
+<ul>
+<li>without providing SHA, git will tag the most recent commit</li>
+<li><code>-a</code>flag (always use this flag) tells Git to create an annotated flag which include a lot of extra information such as:
+<ul>
+<li>the person who made the tag</li>
+<li>the date the tag was made</li>
+<li>a message for the tag</li>
+</ul></li>
+</ul></li>
+<li>to delete a tag <code>git tag -d v1.0</code></li>
+</ul>
+
+<p><strong>Branching</strong></p>
+
+<ul>
+<li><p><code>git branch (name) (SHA)</code></p>
+<ul>
+<li>list all branch names in the repository</li>
+<li>create new branches</li>
+<li>delete branches (<code>git branch -d (name)</code>)
+<ul>
+<li>can&#39;t delete a branch that you&#39;re currently on.</li>
+<li>can&#39;t delete a branch that has unique commit</li>
+<li>To force deletion, <code>git branch -D sidebar</code></li>
+</ul></li>
+</ul></li>
+<li><p><code>git checkout (name)</code></p>
+<ul>
+<li>will remove all of the files that are referenced by commits in the master branch.</li>
+<li>will replace them with the files that are referenced by the commits in the sidebar branch. </li>
+<li>HEAD indicator pointing to the branch</li>
+</ul></li>
+<li><p><code>git checkout -b footer master</code></p>
+<ul>
+<li>create a branch and switch to it in one command<br/></li>
+</ul></li>
+<li><p>See all branches at once</p>
+<ul>
+<li><code>git log --oneline --graph --all</code></li>
+</ul></li>
+</ul>
+
+<p><strong>Merging</strong></p>
+
+<ul>
+<li>regular merge &amp; fast-forward merge</li>
+<li>making a merge makes a commit</li>
+<li><code>git merge &lt;other-branch&gt;</code>merge into the current &#39;checkout&#39; branch</li>
+</ul>
+
+<p><strong>Merge Conflicts</strong></p>
+
+<ul>
+<li>a merge conflict occurs when Git isn&#39;t sure which line(s) you want to use from the branches that are being merged.</li>
+<li>so we need to edit the same line on two different branches and then try to merge them.</li>
+<li>Steps to solve merge conflicts
+<ul>
+<li>locate and remove all lines with merge conflict indicators</li>
+<li>determine what to keep</li>
+<li>save the file(s)</li>
+<li>stage the file(s)</li>
+<li>make a commit</li>
+</ul></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Add Commits to A Repo]]></title>
+    <link href="https://qumino2.github.io/15784050233940.html"/>
+    <updated>2020-01-07T21:50:23+08:00</updated>
+    <id>https://qumino2.github.io/15784050233940.html</id>
+    <content type="html"><![CDATA[
+<p><code>git add &lt;file1&gt; &lt;file2&gt;...&lt;fileN&gt;</code></p>
+
+<ul>
+<li>move files from the Working Directory to the Staging Index</li>
+<li><code>git add .</code> refers to the all files and directories in current directory</li>
+</ul>
+
+<p><code>git rm --cached</code></p>
+
+<ul>
+<li>removes file from the Staging Index</li>
+</ul>
+
+<p><code>git commit -m &quot;Initial commit&quot;</code></p>
+
+<ul>
+<li>Bypass the editor with the <code>-m</code> flag</li>
+</ul>
+
+<p><strong>What to include in a Commit</strong></p>
+
+<ul>
+<li>The goal is that each commit has a single focus</li>
+</ul>
+
+<p><strong>What makes good commit messages?</strong></p>
+
+<p>Do</p>
+
+<ul>
+<li>do keep the message short (less than 60-ish characters)</li>
+<li>do explain what the commit does (not how or why!)</li>
+</ul>
+
+<p>Do not</p>
+
+<ul>
+<li>do not explain why the changes are made (more on this below)</li>
+<li>do not explain how the changes are made (that&#39;s what git log -p is for!)</li>
+<li>do not use the word &quot;and&quot;</li>
+</ul>
+
+<p><strong>What if you want to explain the Why</strong></p>
+
+<p><img src="media/15784050233940/15786665574734.jpg" alt="" style="width:533px;"/><br/>
+The information in red box is included in the <code>git log</code>.</p>
+
+<p><a href="https://udacity.github.io/git-styleguide/">Udacity Git Commit Message Style Guide</a></p>
+
+<p><code>git diff</code></p>
+
+<ul>
+<li>to see changes that have been made but haven&#39;t been committed, yet.
+<ul>
+<li>the files that have been modified</li>
+<li>the location of the lines that have been added/removed</li>
+<li>the actual changes that have been made</li>
+</ul></li>
+<li>same as <code>git log -p</code></li>
+</ul>
+
+<p><strong>Having Git Ignore Files</strong></p>
+
+<ul>
+<li>add <code>.gitignore</code> file to the same directory that the hidden <code>.git</code> directory is located</li>
+</ul>
+
+<p><strong>What if there are a lot files to ignore?</strong><br/>
+<img src="media/15784050233940/15786674619251.jpg" alt="" style="width:590px;"/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Review A Repo's History]]></title>
+    <link href="https://qumino2.github.io/15783992567493.html"/>
+    <updated>2020-01-07T20:14:16+08:00</updated>
+    <id>https://qumino2.github.io/15783992567493.html</id>
+    <content type="html"><![CDATA[
+<p><code>git log</code> - display all of the commits of a repository</p>
+
+<ul>
+<li>the SHA</li>
+<li>the author</li>
+<li>the date</li>
+<li>the message</li>
+<li>...and more</li>
+</ul>
+
+<p><code>git log --oneline</code> (use flag to alter display)</p>
+
+<ul>
+<li>lists one commit per line</li>
+<li>shows the first 7 characters of the commit&#39;s SHA</li>
+<li>shows the commit&#39;s message</li>
+</ul>
+
+<p><code>git log --stat</code></p>
+
+<ul>
+<li>displays the file(s) that have been modified</li>
+<li>displays the number of lines that have been added/removed</li>
+<li>displays a summary line with the total number of modified files and lines that have been added/removed</li>
+</ul>
+
+<p><strong>command line pager</strong><br/>
+<img src="media/15783992567493/15784019100857.jpg" alt="" style="width:638px;"/></p>
+
+<p><code>git log -p</code> (flag short for --patch)</p>
+
+<ul>
+<li><code>git log -p -w</code> (-w flag ignores whitespace changes)</li>
+<li>displays the files that have been modified</li>
+<li>displays the location of the lines that have been added/removed</li>
+<li>displays the actual changes that have been made</li>
+<li><code>git log -p SHA</code> OR <code>git show -SHA</code> to look into a  specific commit</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[1.1 - Introduction]]></title>
+    <link href="https://qumino2.github.io/15783211411208.html"/>
+    <updated>2020-01-06T22:32:21+08:00</updated>
+    <id>https://qumino2.github.io/15783211411208.html</id>
+    <content type="html"><![CDATA[
+<ol>
+<li><p>Why did you enroll in Stature? What would you like to change or improve about yourself?</p>
+<p>I enrolled in Stature because I want to shift my character to much more abundant storyline. I want to  become a person who can set big long-term goals and steadily achieve them in a relaxed-confidence manner. I want to continuously build atomic habit to further unlock what the universe has to offer.</p></li>
+<li><p>What are your intentions for this deep dive?</p>
+<p>I want to build a character of myself I really like and appreciate and unlock my potential, abundant beyond what I can think of now.</p></li>
+<li><p>Why now? Why are you inviting a character sculpting transformation at this time in your life?   </p>
+<p>It&#39;s the time. I do believe I have my own life path, hero journey and storyline which I deeply appreciate now. I can&#39;t wait unlocking interesting experiences and unconventional results.</p></li>
+</ol>
+
+<h1 id="toc_0">1.2 - The Airing of Grievances</h1>
+
+<table>
+<thead>
+<tr>
+<th>Grievance</th>
+<th>Desired Values</th>
+<th>Expressed Values</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Did not finish my task/goal on time</td>
+<td>Accountablility, firm, flow</td>
+<td>Resisitance, self-justification</td>
+</tr>
+<tr>
+<td>Did not sleep early as I wish</td>
+<td>Peace, stable</td>
+<td>Desire, inpulse</td>
+</tr>
+<tr>
+<td>Worried too much about being judged or criticized</td>
+<td>Relax, focus, bold, fast</td>
+<td>Hesitation, stagnent, slow</td>
+</tr>
+</tbody>
+</table>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Weekly Goal / Review: 01/06 - 01/12 Jan 2020]]></title>
@@ -20,31 +517,44 @@
     <content type="html"><![CDATA[
 <h1 id="toc_0">Highlights</h1>
 
+<ul>
+<li><p>Stick to my swimming and vegetarian habit this week.</p></li>
+<li><p>Accidentally, I helped a girl from Belarus to communicate with staff in the gym and later we chatted a bit on WeChat. She&#39;s an English teacher here and was definitely a good student when she was in school. </p></li>
+</ul>
+
 <h1 id="toc_1">Goals</h1>
 
-<p>Determine launch date, contract signing date, what need to prepare for contract with Shanbay</p>
+<p>✔️ Determine launch date, contract signing date, what need to prepare for contract with Shanbay </p>
 
-<p>Finish Udacity Git course</p>
+<p>They&#39;re still drafting the contract and I will put 1st March as a proposed launch date. So should start to translate Self-control guide from next week.</p>
+
+<p>✔️ Finish Udacity Git course</p>
+
+<p>I&#39;ve also done the notes on my blog.</p>
 
 <h1 id="toc_2">Focus habit</h1>
 
-<p><strong>Swimming every day</strong> (preferable every morning)</p>
+<p>✔️ <strong>Swimming every day</strong> (preferable every morning) 7/7</p>
+
+<p>I swam each morning this week and actually I have also stick to my vegetarian trial this week. </p>
 
 <h1 id="toc_3">Media and Events</h1>
 
 <h3 id="toc_4">Events</h3>
 
+<p>None</p>
+
 <h3 id="toc_5">Books</h3>
 
-<ul>
-<li>Sapiens: A Brief History of Humankind (Mint reading catch up)</li>
-</ul>
+<p>✘ Sapiens: A Brief History of Humankind (Mint reading catch up)</p>
+
+<p>Still did not start, will focus this book next week.</p>
 
 <h3 id="toc_6">Movies</h3>
 
-<ul>
-<li>Free Solo</li>
-</ul>
+<p>✔️ Free Solo </p>
+
+<p>It all depends on your priority. For me, if I live alone, I probably will have the same mentality with him. However, if I live with someone I love, everything else will be secondary. As the message from my all time favourite moive UP, the most exciting adventure in the world is to be with you, even just walking on a country road.</p>
 
 ]]></content>
   </entry>
@@ -671,9 +1181,7 @@ Prioritize your main goal and habit so it won&#39;t slip   so naturally.</p>
 
 <h3 id="toc_4">Events</h3>
 
-<ul>
-<li>Had a trip to Guangzhou and visited <a href="https://www.codelab.club/">Codeclub</a> </li>
-</ul>
+<p>Had a trip to Guangzhou and visited <a href="https://www.codelab.club/">Codeclub</a> </p>
 
 <h3 id="toc_5">Books</h3>
 
