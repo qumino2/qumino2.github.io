@@ -4,13 +4,86 @@
   <title><![CDATA[Data Science Journey]]></title>
   <link href="https://qumino2.github.io/atom.xml" rel="self"/>
   <link href="https://qumino2.github.io/"/>
-  <updated>2020-02-17T11:44:00+08:00</updated>
+  <updated>2020-02-23T23:34:06+08:00</updated>
   <id>https://qumino2.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[Weekly Goal / Review: 02/24 - 03/01 Feb 2020 (9/12 week Q1)]]></title>
+    <link href="https://qumino2.github.io/15824713193887.html"/>
+    <updated>2020-02-23T23:21:59+08:00</updated>
+    <id>https://qumino2.github.io/15824713193887.html</id>
+    <content type="html"><![CDATA[
+<h1 id="toc_0">Highlights</h1>
+
+<h1 id="toc_1">Goals</h1>
+
+<p>I&#39;d love finish the VISA submission process</p>
+
+<p>I&#39;d love to study/utilize/output technical stuff 0.5h+ before 10 am (never miss twice is the goal)</p>
+
+<ul>
+<li>what to learn, please refer to backup weekly review</li>
+</ul>
+
+<h1 id="toc_2">Focus habit</h1>
+
+<ol>
+<li><p>I&#39;d love to do daily Cardio / &quot;three big&quot; strength training </p></li>
+<li><p>I&#39;d love to work for my company at same time slot: 7pm - 8pm (not necessarily daily, record time: 5000$ hourly rate)</p></li>
+</ol>
+
+<h1 id="toc_3">Media and Events</h1>
+
+<h3 id="toc_4">Events</h3>
+
+<h3 id="toc_5">Books</h3>
+
+<h3 id="toc_6">Movies</h3>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to design a dashboard step by step? (Udacity Data Visualization Nanodegree notes)]]></title>
+    <link href="https://qumino2.github.io/15823494893979.html"/>
+    <updated>2020-02-22T13:31:29+08:00</updated>
+    <id>https://qumino2.github.io/15823494893979.html</id>
+    <content type="html"><![CDATA[
+<h1 id="toc_0">Identify Graphicacy</h1>
+
+<p><strong>Low</strong></p>
+
+<ul>
+<li>Line chart</li>
+<li>bar chart</li>
+</ul>
+
+<p><strong>Medium</strong></p>
+
+<ul>
+<li>Dual axis</li>
+<li>Scatter plot</li>
+<li>Cumulative measures (important)</li>
+<li>Heat map</li>
+</ul>
+
+<p><strong>High Graphicacy</strong> </p>
+
+<ul>
+<li>Radar</li>
+<li>Tree</li>
+<li>Network</li>
+<li>Error bars (a series of boxplot)</li>
+<li>custom</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Weekly Goal / Review: 02/17 - 02/23 Feb 2020 (8/12 week Q1)]]></title>
@@ -20,24 +93,33 @@
     <content type="html"><![CDATA[
 <h1 id="toc_0">Highlights</h1>
 
+<ul>
+<li>I still went through some emotional challenges, however, the good thing is I managed to stick to some atomic habits I set, which is a gain for me. I tend to focus on the gain, not the gap.</li>
+</ul>
+
 <h1 id="toc_1">Goals</h1>
 
-<p>I&#39;d love to write two zhihu articles（during weekend）</p>
+<p>✔️ I&#39;d love to write two zhihu articles（during weekend）</p>
 
-<p>I&#39;d love to submit visa application (as soon as possible)</p>
+<p>✔️ I&#39;d love to submit visa application (as soon as possible)</p>
+
+<p>Still a lot of work to do and the appointment is next Thursday.</p>
 
 <h1 id="toc_2">Focus habit</h1>
 
-<ol>
-<li>I&#39;d love to do daily Cardio / &quot;three big&quot; strength training </li>
-<li>I&#39;d love to work for my company at same time slot: 7pm - 8pm (not necessarily daily, record time: 5000$ hourly rate)</li>
-</ol>
+<p>✔️ 1. I&#39;d love to do daily Cardio / &quot;three big&quot; strength training </p>
+
+<p>✘  2. I&#39;d love to work for my company at same time slot: 7pm - 8pm (not necessarily daily, record time: 5000$ hourly rate)</p>
+
+<p>I haven&#39;t done that for a single day so this time-schedule hasn&#39;t been developed. I will continue this next week.</p>
 
 <h1 id="toc_3">Media and Events</h1>
 
 <h3 id="toc_4">Events</h3>
 
 <h3 id="toc_5">Books</h3>
+
+<p>Started to read DK business book</p>
 
 <h3 id="toc_6">Movies</h3>
 
@@ -657,6 +739,15 @@ If the project&#39;s maintainer is requesting changes to the pull request, then:
 <li>
 <a href="#toc_5">1.6 - Summoning Your Power</a>
 </li>
+<li>
+<a href="#toc_6">1.7 - Avoiding Your Power</a>
+</li>
+<li>
+<a href="#toc_7">1.8 - To the Pain</a>
+</li>
+<li>
+<a href="#toc_8">1.9 - To the Love</a>
+</li>
 </ul>
 
 
@@ -802,6 +893,45 @@ Meta, a product combine personal growth and data science</p>
 <li>the things I am going to do is so important for my future or I am so excited about it</li>
 <li>peaceful, focus mind during a long stretch of time without a break</li>
 <li>great time pressure as a forcing function to force me get into FLOW state quickly</li>
+</ul>
+
+<h1 id="toc_6">1.7 - Avoiding Your Power</h1>
+
+<p>pass</p>
+
+<h1 id="toc_7">1.8 - To the Pain</h1>
+
+<p>What was the event?<br/>
+The best thing you could do for her was to walk away.</p>
+
+<p>How did this event affect your character afterwards? How did it change you?<br/>
+I went into personal growth field and always wanted to be a better person since then.</p>
+
+<p>What meaning(s) did you assign to this event? <br/>
+It was the starting point of my current character&#39;s storyline.</p>
+
+<h1 id="toc_8">1.9 - To the Love</h1>
+
+<p>What was the event?</p>
+
+<p>I treated my first love pizza hut using my first piece of income in my life. We sat together, ate pizza, and talk.</p>
+
+<p>How did this event affect your character afterwards? How did it change you?</p>
+
+<p>Since then, I understand that the most fantastic adventure is not about going somewhere, instead, it is about being with the one you love.</p>
+
+<p>What meaning(s) did you assign to this event? </p>
+
+<p>It is my base point. </p>
+
+<p>What kind of character would you have to become such that your previous peak experiences eventually become your new daily norm? </p>
+
+<p>Good question! If such experiences eventually become my daily norm I would wake up laughing. Here are what I am think of now:</p>
+
+<ul>
+<li>Solid healthy habit (food, sleep, exercise, mindful meditation)</li>
+<li>Productive and Prolific (deep focus for long-time session, clear and stable daily schedule)</li>
+<li>Money lover (invest more time into money field)</li>
 </ul>
 
 ]]></content>
